@@ -1,0 +1,19 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #e4e4e4;
+}
+
+button {
+  transition: all 200ms ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all 200ms ease-out;
+}
