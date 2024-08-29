@@ -1,6 +1,9 @@
+import blob_bakcground from "../../assets/cards/blob.svg";
+import big_blob_bakcground from "../../assets/cards/big_blob.svg";
+
 import Blob from "../../components/cards/Blob";
 import Default from "../../components/cards/Default";
-import blob_bakcground from "../../assets/cards/blob.svg";
+import FeedbackForms from "../../components/cards/Feedbacks/Forms";
 
 export default function Home() {
   return (
@@ -42,10 +45,34 @@ export default function Home() {
         subheader={
           "Transform your code repositories into diagrams to enhance understanding and streamline your workflow. Ensure efficient collaboration and keep your documentation up-to-date with just a few clicks."
         }
+        button={"Open an Account"}
         background={blob_bakcground}
         width={"39.0625rem"}
         height={"30.17706rem"}
       />
+
+      <Blob
+        header={[
+          "Improving Usage Insights",
+          <br />,
+          "with User Reports and Charts",
+        ]}
+        subheader={[
+          "Visualizing user data through comprehensive graphs and",
+          <br />,
+          "reports significantly improves insight into project",
+          <br />,
+          "development.",
+        ]}
+        button={"See Charts"}
+        background={big_blob_bakcground}
+        width={"50.88063rem"}
+        height={"30.17706rem"}
+      />
+
+      <FeedbackForms header={"Insights and suggestions for project success"} />
+
+      
     </div>
   );
 }

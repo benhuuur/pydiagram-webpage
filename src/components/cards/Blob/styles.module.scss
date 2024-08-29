@@ -5,13 +5,17 @@
   justify-content: center;
 
   &__content {
+    width: 80.7939328%;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
   &__header {
-    width: 31.56013rem;
+    width: 100%;
+    // width: 31.56013rem;
+    
     height: 6.07731rem;
 
     color: #000;
@@ -22,7 +26,10 @@
   }
   &__subheader {
     margin-top: 0.76rem;
-    width: 28.37481rem;
+
+    width: 89.9071391657766%;
+    // width: 28.37481rem;
+
     height: 6.07731rem;
     color: #7e8490;
 

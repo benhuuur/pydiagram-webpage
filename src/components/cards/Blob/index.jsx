@@ -1,8 +1,14 @@
-import React from "react";
 import styles from "./styles.module.scss";
 import Button from "../elements/Button";
 
-export default function Blob({ header, subheader, background, width, height }) {
+export default function Blob({
+  header,
+  subheader,
+  button,
+  background,
+  width,
+  height,
+}) {
   const cardStyle = {
     background: `url(${background}) no-repeat center center`,
     backgroundSize: "cover",
@@ -17,10 +23,10 @@ export default function Blob({ header, subheader, background, width, height }) {
         <div className={styles.card__header}>{header}</div>
         <div className={styles.card__subheader}>{subheader}</div>
         <Button
-          text="Open an Account"
-          theme="dark"
-          width={"134.791px"}
-          height={"34.871px"}
+          text={button}
+          theme={"dark"}
+          width={"8.42444rem"}
+          height={"2.17944rem"}
         />
         <div className={styles.card__topics}></div>
       </div>
