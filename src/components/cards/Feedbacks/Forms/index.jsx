@@ -1,19 +1,21 @@
 import styles from "./styles.module.scss";
+
 import Button from "../../elements/Button";
 import Input from "../../elements/Input";
 import Select from "../../elements/Select";
 
-export default function FeedbackForms({ header }) {
+export default function Forms({ header }) {
   const options = [
-    { value: "", label: "Sugestão" },
-    { value: "issue", label: "Algo não está certo" },
-    { value: "praise", label: "Elogio" },
+    { value: "suggestion", label: "Suggestion" },
+    { value: "something is not right", label: "Something is not right" },
+    { value: "praise", label: "Praise" },
   ];
 
   return (
     <div className={styles.card}>
       <div className={styles.card__content}>
         <div className={styles.card__header}>{header}</div>
+        {/* <form action="" method="post"> */}
         <Input
           placeholder={
             "Your Feedback Here: Share Your Thoughts and Suggestions"
@@ -29,6 +31,7 @@ export default function FeedbackForms({ header }) {
             height={"2.17944rem"}
           />
         </div>
+        {/* </form> */}
       </div>
     </div>
   );

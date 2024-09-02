@@ -1,6 +1,13 @@
-function ZoomIn(children, duration) {
+import styles from "./styles.module.scss";
+import "aos/dist/aos.css";
+
+function ZoomIn({ children, duration }) {
   return (
-    <div data-aos="zoom-in" data-aos-duration={duration}>
+    <div
+      className={styles.flex}
+      data-aos="zoom-in"
+      data-aos-duration={duration}  
+    >
       {children}
     </div>
   );

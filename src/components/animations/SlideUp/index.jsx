@@ -1,6 +1,13 @@
-function SlideUp(children, duration) {
+import styles from "./styles.module.scss";
+import "aos/dist/aos.css";
+
+function SlideUp({ children, duration }) {
   return (
-    <div data-aos="slide-up" data-aos-duration={duration}>
+    <div
+      className={styles.flex}
+      data-aos="slide-up"
+      data-aos-duration={duration}
+    >
       {children}
     </div>
   );
