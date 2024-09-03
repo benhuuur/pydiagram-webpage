@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import Button from "../elements/Button";
+import Button from "../../elements/Button";
 
 export default function Blob({
   header,

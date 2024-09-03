@@ -78,3 +78,9 @@ $height: 30.17706rem;
     }
   }
 }
+
+@media (max-width: 810px) {
+  .card{
+    width: 100%;
+  }
+}

@@ -10,18 +10,42 @@ import Blob from "../../components/cards/Blob";
 import Default from "../../components/cards/Default";
 import Forms from "../../components/cards/Feedbacks/Forms";
 import Feedback from "../../components/cards/Feedbacks/Feedback";
+import Navbar from "../../components/elements/Navbar";
 
 import FadeLeft from "../../components/animations/FadeLeft";
 import SlideUp from "../../components/animations/SlideUp";
 import ZoomIn from "../../components/animations/ZoomIn";
+import Footer from "../../components/elements/Footer";
+import Responsive from "../../components/Responsive";
 
 export default function Home() {
+  const footerLinks = [
+    {
+      title: "Developers Github",
+      links: [
+        { text: "Benhur Feld", href: "#" },
+        { text: "Renato Mendes", href: "#" },
+        { text: "Eliana Almeida", href: "#" },
+      ],
+    },
+    {
+      title: "Source Code",
+      links: [
+        { text: "Pydiagram", href: "#" },
+        { text: "Backend", href: "#" },
+        { text: "Website", href: "#" },
+      ],
+    },
+  ];
+
   useEffect(() => {
     AOS.init();
   });
   return (
     <div className={styles.body}>
       <div className={styles.body__content}>
+        <Navbar />
+        {/* <Responsive> */}
         <ZoomIn duration={1500}>
           <Default
             header="Increase your efficiency with diagram generation"
@@ -49,7 +73,7 @@ export default function Home() {
         <FadeLeft duration={1000}>
           <Forms header={"Insights and suggestions for project success"} />
         </FadeLeft>
-        <FadeLeft duration={1500}>
+        <FadeLeft duration={1000}>
           <Feedback
             owner={"Benhur Feld"}
             type={"Praise"}
@@ -58,7 +82,7 @@ export default function Home() {
             }
           ></Feedback>
         </FadeLeft>
-        <FadeLeft duration={2000}>
+        <FadeLeft duration={1000}>
           <Feedback
             owner={"Benhur Feld"}
             type={"Praise"}
@@ -68,7 +92,7 @@ export default function Home() {
           ></Feedback>
         </FadeLeft>
 
-        <SlideUp duration={2000}>
+        <SlideUp duration={1000}>
           <Default
             header="Visual representation for clarity and collaboration"
             subheader="A visual representation simplifies complex project information,
@@ -81,7 +105,7 @@ export default function Home() {
             ]}
           />
         </SlideUp>
-        <SlideUp duration={2000}>
+        <SlideUp duration={1000}>
           <Default
             header="Maximizing Project Accuracy and Scalability"
             subheader="Diagrams boost project accuracy and scalability by simplifying
@@ -95,23 +119,33 @@ export default function Home() {
             ]}
           />
         </SlideUp>
-        <Blob
-          header={[
-            "Improving Usage Insights",
-            <br />,
-            "with User Reports and Charts",
-          ]}
-          subheader={[
-            "Visualizing user data through comprehensive graphs and",
-            <br />,
-            "reports significantly improves insight into project",
-            <br />,
-            "development.",
-          ]}
-          button={"See Charts"}
-          background={big_blob_bakcground}
-          width={"50.88063rem"}
-          height={"30.17706rem"}
+
+        <SlideUp duration={1000}>
+          <Blob
+            header={[
+              "Improving Usage Insights",
+              <br />,
+              "with User Reports and Charts",
+            ]}
+            subheader={[
+              "Visualizing user data through comprehensive graphs and",
+              <br />,
+              "reports significantly improves insight into project",
+              <br />,
+              "development.",
+            ]}
+            button={"See Charts"}
+            background={big_blob_bakcground}
+            width={"50.88063rem"}
+            height={"30.17706rem"}
+          />
+        </SlideUp>
+        {/* </Responsive> */}
+        <Footer
+          leftTitle="PYDIAGRAM"
+          leftSubtitle="Automates your documentation"
+          buttonText="Open an Account"
+          linksData={footerLinks}
         />
       </div>
     </div>

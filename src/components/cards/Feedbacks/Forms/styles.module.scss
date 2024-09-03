@@ -49,3 +49,9 @@ $height: 26.74719rem;
     justify-content: flex-end;
   }
 }
+
+@media (max-width: 810px) {
+  .card {
+    width: 100%;
+  }
+}

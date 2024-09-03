@@ -110,7 +110,7 @@ $height: 26.74719rem;
 .separator {
   border-bottom: 0.125rem dashed #e5e7ed;
   margin: 20px 0;
-  width: 28.739rem;
+  width: 100%;
 
   &__start {
     margin-top: 1.59rem;
@@ -119,5 +119,11 @@ $height: 26.74719rem;
   &__end {
     margin-top: 1.59rem;
     margin-bottom: 2.05rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .card{
+    width: 100%;
   }
 }

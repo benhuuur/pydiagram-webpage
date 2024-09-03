@@ -1,8 +1,8 @@
 import styles from "./styles.module.scss";
 
-import Button from "../../elements/Button";
-import Input from "../../elements/Input";
-import Select from "../../elements/Select";
+import Button from "../../../elements/Button";
+import Input from "../../../elements/Input"
+import Select from "../../../elements/Select";
 
 export default function Forms({ header }) {
   const options = [
